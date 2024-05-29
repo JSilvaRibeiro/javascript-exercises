@@ -1,11 +1,11 @@
 const convertToCelsius = function (num) {
-  let celNum = num - 32;
+  let celNum = (num - 32) * (5 / 9);
   let result = Math.round(celNum * 10) / 10;
   return result;
 };
 
 const convertToFahrenheit = function (num) {
-  let fahrNum = num + 32;
+  let fahrNum = num * (9 / 5) + 32;
   let result = Math.round(fahrNum * 10) / 10;
   return result;
 };
